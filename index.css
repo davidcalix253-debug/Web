@@ -17,7 +17,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: #4F4F4F;
+   background-color: #00BFFF;
    background-image: none;
    border: 0px solid #CCCCCC;
    border-radius: 0px;
@@ -27,7 +27,7 @@ body
 #LayoutGrid1
 {
    box-sizing: border-box;
-   padding: 10px 15px 10px 15px;
+   padding: 0 15px 0 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -56,7 +56,7 @@ body
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    width: 100%;
-   text-align: left;
+   text-align: center;
 }
 #LayoutGrid1:before,
 #LayoutGrid1:after,
@@ -126,7 +126,7 @@ body
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    width: 100%;
-   text-align: right;
+   text-align: center;
 }
 #LayoutGrid2:before,
 #LayoutGrid2:after,
@@ -149,34 +149,13 @@ body
    width: 100% !important;
 }
 }
-#wb_Text1 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text1 div
-{
-   text-align: center;
-}
-#wb_Text1
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
-}
 #wb_CssMenu1
 {
    border: 0px solid #C0C0C0;
    border-radius: 0px;
    background-color: transparent;
    margin: 0;
-   text-align: left;
+   text-align: center;
    z-index: 1111 !important;
 }
 #wb_CssMenu1 ul
@@ -218,8 +197,8 @@ body
 #wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover
 {
    color: #FFFFFF;
-   border: 1px solid #2E6DA4;
-   background-color: #337AB7;
+   border: 1px solid #00BFFF;
+   background-color: #00BFFF;
    background-image: none;
 }
 #wb_CssMenu1 li.firstmain
@@ -254,17 +233,38 @@ body
    font-weight: normal;
    line-height: 1;
 }
-#CssMenu1 .child:before
+#CssMenu1 .address-book:before
 {
    content: "\";
 }
-#CssMenu1 .cart-arrow-down:before
+#CssMenu1 .picture-o:before
 {
    content: "\";
 }
-#CssMenu1 .address-book-o:before
+#CssMenu1 .volume-control-phone:before
 {
    content: "\";
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text1 div
+{
+   text-align: center;
+}
+#wb_Text1
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
 }
 #wb_LayoutGrid3
 {
@@ -274,11 +274,12 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: #FBFBFB;
-   background-image: url('images/depositphotos_271954322-stock-photo-moscow-russia-may-15-2019.jpg');
+   background-color: transparent;
+   background-image: url('images/f3c3436b-c8f1-4193-938c-dd01205bd9b8_16-9-discover-aspect-ratio_default_0.jpg');
    background-repeat: repeat;
-   background-position: center center;
-   border: 0px solid #CCCCCC;
+   background-position: left top;
+   background-size: cover;
+   border: 0px solid rgba(0,0,0,0.00);
    border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
@@ -286,7 +287,7 @@ body
 #LayoutGrid3
 {
    box-sizing: border-box;
-   padding: 300px 15px 258px 15px;
+   padding: 200px 15px 500px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -338,6 +339,16 @@ body
    width: 100% !important;
 }
 }
+#LayoutGrid3-overlay
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: #000000;
+   opacity: 0;
+}
 #wb_LayoutGrid4
 {
    clear: both;
@@ -356,7 +367,7 @@ body
 #LayoutGrid4
 {
    box-sizing: border-box;
-   padding: 10px 15px 10px 15px;
+   padding: 0 15px 0 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -417,6 +428,25 @@ body
    width: 100% !important;
 }
 }
+#wb_Image2
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 371px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
 #wb_Text2 
 {
    background-color: transparent;
@@ -425,11 +455,11 @@ body
    border-radius: 0px;
    padding: 0;
    margin: 0;
-   text-align: justify;
+   text-align: left;
 }
 #wb_Text2 div
 {
-   text-align: justify;
+   text-align: left;
 }
 #wb_Text2
 {
@@ -437,4 +467,74 @@ body
    margin: 0;
    box-sizing: border-box;
    width: 100%;
+}
+#wb_LayoutGrid5
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #00BFFF;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid5
+{
+   box-sizing: border-box;
+   padding: 0 15px 0 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid5 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 100%;
+   text-align: center;
+}
+#LayoutGrid5:before,
+#LayoutGrid5:after,
+#LayoutGrid5 .row:before,
+#LayoutGrid5 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid5:after,
+#LayoutGrid5 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid5 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
 }
